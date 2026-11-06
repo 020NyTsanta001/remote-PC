@@ -1,0 +1,25 @@
+PCRemote - agent Windows (aucun logiciel tiers)
+================================================
+
+Installation (une seule fois)
+1. Copie ce dossier sur le PC (ex. Bureau), double-clique sur install.bat.
+2. Accepte la fenetre d'administrateur (sert uniquement a autoriser le pare-feu).
+3. Choisis un mot de passe de pairing. Il sert une seule fois, a la premiere connexion du telephone.
+4. C'est fini : l'agent tourne sans fenetre et se lance a chaque ouverture de session Windows.
+
+Utilisation
+- Active le partage de connexion sur le telephone, connecte le PC a ce Wi-Fi (une fois, Windows s'en souvient).
+- Ouvre l'app sur le telephone : elle trouve le PC toute seule.
+
+Notes
+- Il tourne dans ta session : il ne peut pas piloter l'ecran de connexion/verrouillage
+  (limite de Windows) ni un PC eteint ou en veille.
+- Windows Defender / SmartScreen peut signaler le programme (il simule clavier/souris et ecoute le reseau).
+  Il est compile sur ta machine depuis le code source fourni : autorise-le si besoin.
+- Journal : %LOCALAPPDATA%\PCRemote\log.txt
+- Desinstaller : uninstall.bat
+- Changer le mot de passe : relance install.bat puis reponds O (le telephone devra se re-associer).
+
+Mise a jour de l'agent (version 2, necessaire pour le mode ecran de l'app 1.2)
+- Remplace les fichiers du dossier, relance install.bat, reponds N a la question sur le mot de passe
+  (le telephone n'a pas besoin de se re-associer).
